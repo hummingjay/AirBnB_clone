@@ -8,6 +8,7 @@ class HBNBCommand(cmd.Cmd):
     # THe commands
     def do_EOF(self, line):
         """Accepts interuption by user to exit program """
+        print()
         return True
 
     def do_quit(self, line):
