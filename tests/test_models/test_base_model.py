@@ -13,6 +13,7 @@ import unittest
 import os
 from unittest.mock import patch
 
+
 class TestBaseModel(unittest.TestCase):
     """ Unittests for testing BaseModel class. """
     def test_attributes(self):
@@ -41,10 +42,11 @@ class TestBaseModel(unittest.TestCase):
         expected_dict = {
                 'id': model.id,
                 'created_at': model.created_at.isoformat(),
-                'updated_at':model.updated_at.isoformat(),
+                'updated_at': model.updated_at.isoformat(),
                 '__class__': 'BaseModel',
         }
         self.assertDictEqual(model.to_dict(), expected_dict)
+
 
 if __name__ == '__main__':
     unittest.main()
