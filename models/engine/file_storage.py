@@ -62,19 +62,19 @@ class FileStorage:
         """ Returns the valid attributes and their types for classname"""
         attributes = {
                 "BaseModel":
-                    {"id": str,
-                     "created_at": datetime.datetime,
-                     "updated_at": datetime.datetime},
+                     {"id": str,
+                      "created_at": datetime.datetime,
+                      "updated_at": datetime.datetime},
                 "User":
-                    {"email": str,
-                     "password": str,
-                     "first_name": str,
-                     "last_name": str},
+                     {"email": str,
+                      "password": str,
+                      "first_name": str,
+                      "last_name": str},
                 "State":
-                    {"name": str}.
+                     {"name": str}.
                 "City":
                      {"state_id": str,
-                       "name": str},
+                      "name": str},
                 "Amenity":
                      {"name": str},
                 "Place":
@@ -90,7 +90,7 @@ class FileStorage:
                       "amenity_ids": list},
                 "Review":
                 {"place_id": str,
-                             "user_id": str,
-                             "text": str}
+                    "user_id": str,
+                    "text": str}
                 }
         return attributes
